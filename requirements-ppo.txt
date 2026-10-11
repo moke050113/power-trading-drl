@@ -1,0 +1,4 @@
+# 可选训练依赖；基础模块仍只需要requirements.txt。
+-r requirements.txt
+stable-baselines3==2.9.0
+torch==2.14.1
