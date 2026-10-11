@@ -1,0 +1,29 @@
+{
+  "purpose": "运行验证，非训练效果证明",
+  "seed": 0,
+  "requested_timesteps": 96,
+  "actual_timesteps": 96,
+  "stable_baselines3": "2.9.0",
+  "torch": "2.14.1+cpu",
+  "gymnasium": "1.4.0",
+  "evaluation": {
+    "episodes": [
+      {
+        "episode": 0,
+        "steps": 24,
+        "cost_yuan": 1514750.0,
+        "reward": -1514750.0
+      },
+      {
+        "episode": 1,
+        "steps": 24,
+        "cost_yuan": 1514750.0,
+        "reward": -1514750.0
+      }
+    ],
+    "cost_mean_yuan": 1514750.0,
+    "cost_std_yuan": 0.0,
+    "reward_mean": -1514750.0,
+    "reward_std": 0.0
+  }
+}

@@ -1,0 +1,2 @@
+# 文本在Git中使用LF，避免跨平台换行导致diff检查误报。
+* text=auto eol=lf

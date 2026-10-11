@@ -1,0 +1,106 @@
+{
+  "spot": {
+    "episodes": [
+      {
+        "episode": 0,
+        "steps": 24,
+        "cost_yuan": 1514750.0,
+        "reward": -1514750.0
+      },
+      {
+        "episode": 1,
+        "steps": 24,
+        "cost_yuan": 1514750.0,
+        "reward": -1514750.0
+      },
+      {
+        "episode": 2,
+        "steps": 24,
+        "cost_yuan": 1514750.0,
+        "reward": -1514750.0
+      }
+    ],
+    "cost_mean_yuan": 1514750.0,
+    "cost_std_yuan": 0.0,
+    "reward_mean": -1514750.0,
+    "reward_std": 0.0
+  },
+  "fixed70": {
+    "episodes": [
+      {
+        "episode": 0,
+        "steps": 24,
+        "cost_yuan": 1287425.0,
+        "reward": -1287425.0
+      },
+      {
+        "episode": 1,
+        "steps": 24,
+        "cost_yuan": 1287425.0,
+        "reward": -1287425.0
+      },
+      {
+        "episode": 2,
+        "steps": 24,
+        "cost_yuan": 1287425.0,
+        "reward": -1287425.0
+      }
+    ],
+    "cost_mean_yuan": 1287425.0,
+    "cost_std_yuan": 0.0,
+    "reward_mean": -1287425.0,
+    "reward_std": 0.0
+  },
+  "random": {
+    "episodes": [
+      {
+        "episode": 0,
+        "steps": 24,
+        "cost_yuan": 1361580.9888088703,
+        "reward": -1361580.9888088703
+      },
+      {
+        "episode": 1,
+        "steps": 24,
+        "cost_yuan": 1377101.4351463318,
+        "reward": -1377101.4351463318
+      },
+      {
+        "episode": 2,
+        "steps": 24,
+        "cost_yuan": 1370341.3561534882,
+        "reward": -1370341.3561534882
+      }
+    ],
+    "cost_mean_yuan": 1369674.5933695633,
+    "cost_std_yuan": 6353.712462596211,
+    "reward_mean": -1369674.5933695633,
+    "reward_std": 6353.712462596211
+  },
+  "ppo": {
+    "episodes": [
+      {
+        "episode": 0,
+        "steps": 24,
+        "cost_yuan": 1514750.0,
+        "reward": -1514750.0
+      },
+      {
+        "episode": 1,
+        "steps": 24,
+        "cost_yuan": 1514750.0,
+        "reward": -1514750.0
+      },
+      {
+        "episode": 2,
+        "steps": 24,
+        "cost_yuan": 1514750.0,
+        "reward": -1514750.0
+      }
+    ],
+    "cost_mean_yuan": 1514750.0,
+    "cost_std_yuan": 0.0,
+    "reward_mean": -1514750.0,
+    "reward_std": 0.0
+  }
+}

@@ -1,0 +1,126 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1310" viewBox="0 0 1200 1310">
+<rect width="1200" height="1310" fill="#f8fafc"/>
+<g font-family="Microsoft YaHei, SimHei, sans-serif" fill="#0f172a">
+<text x="50" y="45" font-size="28" font-weight="bold">24小时基础购电策略比较</text>
+<text x="50" y="76" font-size="16" >固定合成数据 · 三种策略使用相同负荷和价格曲线 · 未进行DRL训练</text>
+<text x="50" y="105" font-size="15" >参考策略直接观察当小时价格并逐小时选市场；同价时选现货，不代表真实合同可逐小时重签。</text>
+<text x="50" y="143" font-size="16" fill="#2563eb">全现货购电：全天 1,514,750.00 元；相比全现货节省 0.00 元</text>
+<text x="50" y="172" font-size="16" fill="#d97706">固定70%合同覆盖率：全天 1,287,425.00 元；相比全现货节省 227,325.00 元</text>
+<text x="50" y="201" font-size="16" fill="#059669">逐小时低价市场（简化模型参考策略）：全天 1,137,050.00 元；相比全现货节省 377,700.00 元</text>
+<text x="50" y="255" font-size="20" font-weight="bold">负荷曲线（三种策略共用）</text>
+<line x1="100" y1="275" x2="125" y2="275" stroke="#475569" stroke-width="3"/>
+<text x="132" y="280" font-size="14" >负荷</text>
+<line x1="100" y1="438.0" x2="1150" y2="438.0" stroke="#cbd5e1"/>
+<text x="88" y="443.0" font-size="13" text-anchor="end">0</text>
+<line x1="100" y1="401.75" x2="1150" y2="401.75" stroke="#cbd5e1"/>
+<text x="88" y="406.75" font-size="13" text-anchor="end">47</text>
+<line x1="100" y1="365.5" x2="1150" y2="365.5" stroke="#cbd5e1"/>
+<text x="88" y="370.5" font-size="13" text-anchor="end">94</text>
+<line x1="100" y1="329.25" x2="1150" y2="329.25" stroke="#cbd5e1"/>
+<text x="88" y="334.25" font-size="13" text-anchor="end">140</text>
+<line x1="100" y1="293.0" x2="1150" y2="293.0" stroke="#cbd5e1"/>
+<text x="88" y="298.0" font-size="13" text-anchor="end">187</text>
+<text x="100.0" y="459" font-size="13" text-anchor="middle">0</text>
+<text x="236.95652173913044" y="459" font-size="13" text-anchor="middle">3</text>
+<text x="373.9130434782609" y="459" font-size="13" text-anchor="middle">6</text>
+<text x="510.8695652173913" y="459" font-size="13" text-anchor="middle">9</text>
+<text x="647.8260869565217" y="459" font-size="13" text-anchor="middle">12</text>
+<text x="784.7826086956521" y="459" font-size="13" text-anchor="middle">15</text>
+<text x="921.7391304347826" y="459" font-size="13" text-anchor="middle">18</text>
+<text x="1058.695652173913" y="459" font-size="13" text-anchor="middle">21</text>
+<text x="1150.0" y="459" font-size="13" text-anchor="middle">23</text>
+<text x="100" y="288" font-size="12" >MWh</text>
+<text x="1150" y="478" font-size="13" text-anchor="end">小时（0～23）</text>
+<polyline points="100.00,360.46 145.65,364.34 191.30,368.21 236.96,372.09 282.61,375.97 328.26,372.09 373.91,360.46 419.57,344.95 465.22,329.44 510.87,321.69 556.52,325.57 602.17,333.32 647.83,337.20 693.48,341.07 739.13,344.95 784.78,341.07 830.43,329.44 876.09,313.94 921.74,306.18 967.39,310.06 1013.04,321.69 1058.70,333.32 1104.35,344.95 1150.00,352.71" fill="none" stroke="#475569" stroke-width="2.5"/>
+<text x="50" y="515" font-size="20" font-weight="bold">合同电量曲线</text>
+<line x1="100" y1="535" x2="125" y2="535" stroke="#2563eb" stroke-width="3"/>
+<text x="132" y="540" font-size="14" >全现货</text>
+<line x1="440" y1="535" x2="465" y2="535" stroke="#d97706" stroke-width="3"/>
+<text x="472" y="540" font-size="14" >固定70%合同</text>
+<line x1="780" y1="535" x2="805" y2="535" stroke="#059669" stroke-width="3"/>
+<text x="812" y="540" font-size="14" >逐小时低价（参考）</text>
+<line x1="100" y1="698.0" x2="1150" y2="698.0" stroke="#cbd5e1"/>
+<text x="88" y="703.0" font-size="13" text-anchor="end">0</text>
+<line x1="100" y1="661.75" x2="1150" y2="661.75" stroke="#cbd5e1"/>
+<text x="88" y="666.75" font-size="13" text-anchor="end">47</text>
+<line x1="100" y1="625.5" x2="1150" y2="625.5" stroke="#cbd5e1"/>
+<text x="88" y="630.5" font-size="13" text-anchor="end">94</text>
+<line x1="100" y1="589.25" x2="1150" y2="589.25" stroke="#cbd5e1"/>
+<text x="88" y="594.25" font-size="13" text-anchor="end">140</text>
+<line x1="100" y1="553.0" x2="1150" y2="553.0" stroke="#cbd5e1"/>
+<text x="88" y="558.0" font-size="13" text-anchor="end">187</text>
+<text x="100.0" y="719" font-size="13" text-anchor="middle">0</text>
+<text x="236.95652173913044" y="719" font-size="13" text-anchor="middle">3</text>
+<text x="373.9130434782609" y="719" font-size="13" text-anchor="middle">6</text>
+<text x="510.8695652173913" y="719" font-size="13" text-anchor="middle">9</text>
+<text x="647.8260869565217" y="719" font-size="13" text-anchor="middle">12</text>
+<text x="784.7826086956521" y="719" font-size="13" text-anchor="middle">15</text>
+<text x="921.7391304347826" y="719" font-size="13" text-anchor="middle">18</text>
+<text x="1058.695652173913" y="719" font-size="13" text-anchor="middle">21</text>
+<text x="1150.0" y="719" font-size="13" text-anchor="middle">23</text>
+<text x="100" y="548" font-size="12" >MWh</text>
+<text x="1150" y="738" font-size="13" text-anchor="end">小时（0～23）</text>
+<polyline points="100.00,698.00 145.65,698.00 191.30,698.00 236.96,698.00 282.61,698.00 328.26,698.00 373.91,698.00 419.57,698.00 465.22,698.00 510.87,698.00 556.52,698.00 602.17,698.00 647.83,698.00 693.48,698.00 739.13,698.00 784.78,698.00 830.43,698.00 876.09,698.00 921.74,698.00 967.39,698.00 1013.04,698.00 1058.70,698.00 1104.35,698.00 1150.00,698.00" fill="none" stroke="#2563eb" stroke-width="2.5"/>
+<polyline points="100.00,643.72 145.65,646.44 191.30,649.15 236.96,651.86 282.61,654.58 328.26,651.86 373.91,643.72 419.57,632.87 465.22,622.01 510.87,616.58 556.52,619.30 602.17,624.72 647.83,627.44 693.48,630.15 739.13,632.87 784.78,630.15 830.43,622.01 876.09,611.16 921.74,605.73 967.39,608.44 1013.04,616.58 1058.70,624.72 1104.35,632.87 1150.00,638.29" fill="none" stroke="#d97706" stroke-width="2.5"/>
+<polyline points="100.00,620.46 145.65,698.00 191.30,698.00 236.96,698.00 282.61,698.00 328.26,698.00 373.91,698.00 419.57,604.95 465.22,589.44 510.87,581.69 556.52,585.57 602.17,593.32 647.83,597.20 693.48,698.00 739.13,698.00 784.78,698.00 830.43,589.44 876.09,573.94 921.74,566.18 967.39,570.06 1013.04,581.69 1058.70,593.32 1104.35,604.95 1150.00,698.00" fill="none" stroke="#059669" stroke-width="2.5"/>
+<text x="50" y="775" font-size="20" font-weight="bold">现货电量曲线</text>
+<line x1="100" y1="795" x2="125" y2="795" stroke="#2563eb" stroke-width="3"/>
+<text x="132" y="800" font-size="14" >全现货</text>
+<line x1="440" y1="795" x2="465" y2="795" stroke="#d97706" stroke-width="3"/>
+<text x="472" y="800" font-size="14" >固定70%合同</text>
+<line x1="780" y1="795" x2="805" y2="795" stroke="#059669" stroke-width="3"/>
+<text x="812" y="800" font-size="14" >逐小时低价（参考）</text>
+<line x1="100" y1="958.0" x2="1150" y2="958.0" stroke="#cbd5e1"/>
+<text x="88" y="963.0" font-size="13" text-anchor="end">0</text>
+<line x1="100" y1="921.75" x2="1150" y2="921.75" stroke="#cbd5e1"/>
+<text x="88" y="926.75" font-size="13" text-anchor="end">47</text>
+<line x1="100" y1="885.5" x2="1150" y2="885.5" stroke="#cbd5e1"/>
+<text x="88" y="890.5" font-size="13" text-anchor="end">94</text>
+<line x1="100" y1="849.25" x2="1150" y2="849.25" stroke="#cbd5e1"/>
+<text x="88" y="854.25" font-size="13" text-anchor="end">140</text>
+<line x1="100" y1="813.0" x2="1150" y2="813.0" stroke="#cbd5e1"/>
+<text x="88" y="818.0" font-size="13" text-anchor="end">187</text>
+<text x="100.0" y="979" font-size="13" text-anchor="middle">0</text>
+<text x="236.95652173913044" y="979" font-size="13" text-anchor="middle">3</text>
+<text x="373.9130434782609" y="979" font-size="13" text-anchor="middle">6</text>
+<text x="510.8695652173913" y="979" font-size="13" text-anchor="middle">9</text>
+<text x="647.8260869565217" y="979" font-size="13" text-anchor="middle">12</text>
+<text x="784.7826086956521" y="979" font-size="13" text-anchor="middle">15</text>
+<text x="921.7391304347826" y="979" font-size="13" text-anchor="middle">18</text>
+<text x="1058.695652173913" y="979" font-size="13" text-anchor="middle">21</text>
+<text x="1150.0" y="979" font-size="13" text-anchor="middle">23</text>
+<text x="100" y="808" font-size="12" >MWh</text>
+<text x="1150" y="998" font-size="13" text-anchor="end">小时（0～23）</text>
+<polyline points="100.00,880.46 145.65,884.34 191.30,888.21 236.96,892.09 282.61,895.97 328.26,892.09 373.91,880.46 419.57,864.95 465.22,849.44 510.87,841.69 556.52,845.57 602.17,853.32 647.83,857.20 693.48,861.07 739.13,864.95 784.78,861.07 830.43,849.44 876.09,833.94 921.74,826.18 967.39,830.06 1013.04,841.69 1058.70,853.32 1104.35,864.95 1150.00,872.71" fill="none" stroke="#2563eb" stroke-width="2.5"/>
+<polyline points="100.00,934.74 145.65,935.90 191.30,937.06 236.96,938.23 282.61,939.39 328.26,938.23 373.91,934.74 419.57,930.09 465.22,925.43 510.87,923.11 556.52,924.27 602.17,926.60 647.83,927.76 693.48,928.92 739.13,930.09 784.78,928.92 830.43,925.43 876.09,920.78 921.74,918.45 967.39,919.62 1013.04,923.11 1058.70,926.60 1104.35,930.09 1150.00,932.41" fill="none" stroke="#d97706" stroke-width="2.5"/>
+<polyline points="100.00,958.00 145.65,884.34 191.30,888.21 236.96,892.09 282.61,895.97 328.26,892.09 373.91,880.46 419.57,958.00 465.22,958.00 510.87,958.00 556.52,958.00 602.17,958.00 647.83,958.00 693.48,861.07 739.13,864.95 784.78,861.07 830.43,958.00 876.09,958.00 921.74,958.00 967.39,958.00 1013.04,958.00 1058.70,958.00 1104.35,958.00 1150.00,872.71" fill="none" stroke="#059669" stroke-width="2.5"/>
+<text x="50" y="1035" font-size="20" font-weight="bold">价格曲线（三种策略共用）</text>
+<line x1="100" y1="1055" x2="125" y2="1055" stroke="#7c3aed" stroke-width="3"/>
+<text x="132" y="1060" font-size="14" >合同价格</text>
+<line x1="440" y1="1055" x2="465" y2="1055" stroke="#e11d48" stroke-width="3"/>
+<text x="472" y="1060" font-size="14" >现货价格</text>
+<line x1="100" y1="1218.0" x2="1150" y2="1218.0" stroke="#cbd5e1"/>
+<text x="88" y="1223.0" font-size="13" text-anchor="end">0</text>
+<line x1="100" y1="1181.75" x2="1150" y2="1181.75" stroke="#cbd5e1"/>
+<text x="88" y="1186.75" font-size="13" text-anchor="end">220</text>
+<line x1="100" y1="1145.5" x2="1150" y2="1145.5" stroke="#cbd5e1"/>
+<text x="88" y="1150.5" font-size="13" text-anchor="end">440</text>
+<line x1="100" y1="1109.25" x2="1150" y2="1109.25" stroke="#cbd5e1"/>
+<text x="88" y="1114.25" font-size="13" text-anchor="end">660</text>
+<line x1="100" y1="1073.0" x2="1150" y2="1073.0" stroke="#cbd5e1"/>
+<text x="88" y="1078.0" font-size="13" text-anchor="end">880</text>
+<text x="100.0" y="1239" font-size="13" text-anchor="middle">0</text>
+<text x="236.95652173913044" y="1239" font-size="13" text-anchor="middle">3</text>
+<text x="373.9130434782609" y="1239" font-size="13" text-anchor="middle">6</text>
+<text x="510.8695652173913" y="1239" font-size="13" text-anchor="middle">9</text>
+<text x="647.8260869565217" y="1239" font-size="13" text-anchor="middle">12</text>
+<text x="784.7826086956521" y="1239" font-size="13" text-anchor="middle">15</text>
+<text x="921.7391304347826" y="1239" font-size="13" text-anchor="middle">18</text>
+<text x="1058.695652173913" y="1239" font-size="13" text-anchor="middle">21</text>
+<text x="1150.0" y="1239" font-size="13" text-anchor="middle">23</text>
+<text x="100" y="1068" font-size="12" >元/MWh</text>
+<text x="1150" y="1258" font-size="13" text-anchor="end">小时（0～23）</text>
+<polyline points="100.00,1152.09 145.65,1152.09 191.30,1152.09 236.96,1152.09 282.61,1152.09 328.26,1152.09 373.91,1152.09 419.57,1152.09 465.22,1152.09 510.87,1152.09 556.52,1152.09 602.17,1152.09 647.83,1152.09 693.48,1152.09 739.13,1152.09 784.78,1152.09 830.43,1152.09 876.09,1152.09 921.74,1152.09 967.39,1152.09 1013.04,1152.09 1058.70,1152.09 1104.35,1152.09 1150.00,1152.09" fill="none" stroke="#7c3aed" stroke-width="2.5"/>
+<polyline points="100.00,1119.14 145.65,1160.33 191.30,1168.57 236.96,1171.86 282.61,1175.16 328.26,1168.57 373.91,1155.39 419.57,1143.85 465.22,1127.38 510.87,1119.14 556.52,1122.43 602.17,1135.61 647.83,1148.80 693.48,1155.39 739.13,1158.68 784.78,1152.09 830.43,1127.38 876.09,1102.66 921.74,1086.18 967.39,1094.42 1013.04,1110.90 1058.70,1127.38 1104.35,1143.85 1150.00,1152.09" fill="none" stroke="#e11d48" stroke-width="2.5"/>
+<text x="50" y="1290" font-size="14" >全天成本为24个小时成本之和；各小时合同电量 + 现货电量 = 负荷。</text>
+</g></svg>
