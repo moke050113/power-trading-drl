@@ -1,0 +1,259 @@
+{
+  "schema_version": 1,
+  "task_id": "R05",
+  "work_package": "W3",
+  "state": "PROPOSED_NOT_EXECUTABLE",
+  "purpose": "one exploratory compute/coverage/learning-diagnostics pilot, not R05 completion or independent economic evidence",
+  "input_spec": {
+    "year": 2033,
+    "family": "w3_pilot_20261025",
+    "group": "G00",
+    "split": "train",
+    "fixture": false
+  },
+  "exposure": {
+    "role": "new synthetic development training world",
+    "training_and_evaluation_same_world": true,
+    "independent_world_N": 1,
+    "validation_worlds": 0,
+    "confirmation_worlds": 0,
+    "no_model_selection": true
+  },
+  "parameters": {
+    "level": "upper",
+    "policy": "experiments.hybrid_upper_v3.HybridUpperPolicy",
+    "seed": 0,
+    "device": "cpu",
+    "torch_threads": 1,
+    "learning_rate": 0.0003,
+    "lr_schedule": "constant",
+    "net_arch": {
+      "pi": [
+        32,
+        32
+      ],
+      "vf": [
+        32,
+        32
+      ]
+    },
+    "activation_fn": "torch.nn.Tanh (existing SB3 MLP activation, not action transformation)",
+    "ortho_init": true,
+    "normalize_images": true,
+    "share_features_extractor": true,
+    "optimizer_class": "torch.optim.Adam",
+    "optimizer_kwargs": {
+      "eps": 1e-05
+    },
+    "gamma": 1.0,
+    "gae_lambda": 0.95,
+    "n_steps": 32,
+    "batch_size": 32,
+    "n_epochs": 2,
+    "normalize_advantage": true,
+    "clip_range": 0.2,
+    "clip_range_vf": null,
+    "ent_coef": 0.0,
+    "vf_coef": 0.5,
+    "max_grad_norm": 0.5,
+    "use_sde": false,
+    "target_kl": null,
+    "reward_divisor": 1000000.0,
+    "observation_normalization": "fixed existing physical divisors; no fitted/running statistics",
+    "total_timesteps": 32,
+    "n_envs": 1,
+    "reset_num_timesteps": true,
+    "progress_bar": false,
+    "tensorboard_log": null,
+    "verbose": 0
+  },
+  "partner": {
+    "upper_training_lower": "v31.lite_rules.RULES[B2][1] / forecast_dispatch",
+    "fixed_during_collection_and_updates": true,
+    "learned_partner_training": 0
+  },
+  "execution_order": [
+    "single native input generation and upper rollout32",
+    "one PPO.train call, two one-batch epochs / two actual Adam steps",
+    "complete active training year with fixed final model and B2 lower, no learning; label training_trajectory",
+    "save one newly trained checkpoint; reload only these exact bytes and verify source/config/parameter/optimizer identities",
+    "complete one same-input audited replay with fixed checkpoint upper and B2 lower (C10)",
+    "complete one same-input audited replay with rule upper and rule lower (C00)",
+    "derive exploratory paired difference C10-C00 without changing methods or selecting a model; preserve all failures; stop"
+  ],
+  "checkpoint": {
+    "origin": "created only by this approved future attempt",
+    "source_chain_required": true,
+    "readback": "same-attempt fixed hash only; no historical model discovery",
+    "no_arbitrary_partial_recovery": true,
+    "comparison_fields": [
+      "policy parameters",
+      "optimizer state",
+      "PPO counters32/2",
+      "frozen constructor/config and spaces"
+    ],
+    "not_persisted": "SB3 checkpoint excludes rollout_buffer; gradients are not policy state_dict; never demand six-RAM equality across reload or claim arbitrary partial recovery",
+    "tail_invariance": "all six states compared on same original trained object before/after its tail; frozen reload has its own before/after identities during evaluation"
+  },
+  "metrics": [
+    "per-hour raw CNY purchase/flex/total and annual sums",
+    "all EV/industrial service and contract liability residuals",
+    "sampling prefix reward versus prefix costs; full training trajectory costs separated from frozen evaluation",
+    "month/stage/decision-time and action/coverage diagnostics",
+    "KL/clip/value diagnostics and actual optimizer attempts",
+    "training/prepare/tail/evaluation time separately, observed peak RSS",
+    "state and raw-scenario identity before/after tail and each replay"
+  ],
+  "statistics": {
+    "pilot_inclusion": "exploratory development resource/feasibility evidence only; no confirmation, no test selection",
+    "paired_difference": "C10_minus_C00; negative cheaper; descriptive one-world/one-seed value",
+    "confidence_intervals": "NOT_APPLICABLE_TO_THIS_N1_PILOT; no significance or CVaR95 claim",
+    "extrapolation": "limited: upper-only first32 macro decisions; no full-year gradient coverage or trained lower/coordinated advantage",
+    "sample_size_estimation": "full multi-seed development/independent-world variance remains UNKNOWN"
+  },
+  "proposed_budgets": {
+    "preflight_invocations_max": 1,
+    "preflight_hard_seconds_max": 60,
+    "pilot_invocations_max": 1,
+    "pilot_worker_hard_seconds_max": 900,
+    "pilot_rss_bytes_max": 2147483648,
+    "preflight_fake_calls_max": 64,
+    "new_native_worlds_max": 1,
+    "audited_world_replay_copies_max": 2,
+    "world_families_max": 1,
+    "condition_groups_max": 1,
+    "training_seeds_max": 1,
+    "native_annual_deliveries_max": 3,
+    "delivered_hours_max": 26280,
+    "envs_max": 3,
+    "drivers_max": 3,
+    "coordinators_max": 3,
+    "published_worlds_max": 6,
+    "native_resets_max": 3,
+    "PPO_controllers_max": 2,
+    "policy_objects_max": 2,
+    "rollout_collection_calls_max": 1,
+    "gradient_collection_steps_max": 32,
+    "PPO_train_calls_max": 1,
+    "optimizer_step_attempts_max": 2,
+    "backward_attempts_max": 2,
+    "policy_value_API_calls_max": 256,
+    "policy_value_batch_rows_max": 32,
+    "rule_lower_calls_max": 26280,
+    "rule_upper_calls_max": 98,
+    "upper_submission_attempts_max": 294,
+    "lower_submission_attempts_max": 26280,
+    "hour_prepare_attempts_max": 26280,
+    "hour_settlement_attempts_max": 26280,
+    "new_checkpoint_saves_max": 1,
+    "new_checkpoint_loads_max": 1,
+    "single_checkpoint_bytes_max": 33554432,
+    "evidence_output_bytes_max": 100663296,
+    "dependency_temp_cache_bytes_max": 268435456,
+    "automatic_repairs_max": 0,
+    "automatic_retries_max": 0,
+    "LP_solves": 0,
+    "dependency_installations": 0,
+    "old_model_reads": 0,
+    "disk_research_dataset_reads": 0,
+    "validation_or_confirmation_access": 0,
+    "sealed_reads_or_hashes": 0,
+    "git_mutations": 0,
+    "background_services": 0,
+    "native_env_step_calls_max": 228,
+    "device_prepare_hours_max": 26280,
+    "publication_and_DA_seal_events_max": 2484,
+    "policy_value_total_batch_rows_max": 384,
+    "model_predict_wrapper_calls_max": 172,
+    "additional_diagnostic_API_calls_max": 8,
+    "additional_diagnostic_batch_rows_max": 70
+  },
+  "stop_rules": [
+    "preflight must PASS and fixed candidate must receive independent and algorithm static PASS before pilot",
+    "any guard refusal, nonfinite value, source/version mismatch, conservation/service failure or budget excess stops affected run; no repair/retry",
+    "failed/hard-killed attempt retained; liability beyond last durable boundary UNKNOWN, not zero",
+    "no scaling, mechanism changes, seed filtering, training-set changes or R06 transition after pilot"
+  ],
+  "timing_basis": {
+    "historical": "E41 ordinary-year B2 two views17520h supervisor162.844s; E43 fresh PPO prefix18.610s; E47 artificial real-PPO runner11.985s",
+    "estimate": "26280h linear reference244.266s excludes stochastic-world construction, trained policy, checkpoint and new code; 900s is proposed hard ceiling, not promised completion",
+    "training_time": "UNKNOWN until approved pilot",
+    "peak_RSS": "UNKNOWN; proposed hard RSS cap2GiB, must be enforced by supervisor"
+  },
+  "required_implementation": {
+    "new_files": [
+      "src/research/r05_runner.py",
+      "src/tests/test_r05_pilot_contract.py",
+      "tools/run_r05_pilot.py"
+    ],
+    "reuse": [
+      "research.input_boundary routing before constructor",
+      "research.tail_budget.finish_tail",
+      "research.runner_contract.snapshot_learning_state / environment_receipt / rule_state_reader",
+      "v31.lite_gym.AnnualDecisionEnv, WorldCache",
+      "v31.lite_audit.audit_year"
+    ],
+    "do_not_call": [
+      "legacy lite_training smoke/train/freeze CLI",
+      "existing R04 strict two-step runner with loosened flags"
+    ],
+    "needed_differences": [
+      "explicit R05-only approved development spec while preserving W1 fixture-only restriction",
+      "trained32/two-update owner/config contract, no change to original R04 no-update contract",
+      "bounded supervisor for preflight/pilot/RSS/bytes plus persistent attempt/liability stages",
+      "trained six-state invariance before/after tail; exact checkpoint roundtrip and frozen evaluation identities",
+      "no automatic reset, extra world or hidden policy forward in metrics; charge every attempted operation"
+    ]
+  },
+  "execution_commands": {
+    "state": "NOT_AVAILABLE_YET; do not invent runnable command before new entry is implemented and reviewed",
+    "planned_modes": [
+      "preflight (fake-only, no models/worlds/updates)",
+      "pilot (single bounded attempt)"
+    ]
+  },
+  "api_accounting": {
+    "primary_cap_methods": [
+      "policy.forward",
+      "policy.evaluate_actions",
+      "policy.predict_values",
+      "policy.get_distribution"
+    ],
+    "model_predict_wrapper": "separate named counter; its nested get_distribution is charged to primary cap, not double-counted as two primary API calls",
+    "base_upper_bound_calls": 199,
+    "base_upper_bound_rows": 261,
+    "diagnostic_calls": [
+      {
+        "kind": "pre/post update evaluate_actions on same fixed32-sample rollout",
+        "calls": 2,
+        "rows": 64
+      },
+      {
+        "kind": "original/reloaded deterministic checkpoint probe",
+        "calls": 2,
+        "rows": 2
+      },
+      {
+        "kind": "pre/post update value probe on one saved legal observation",
+        "calls": 2,
+        "rows": 2
+      },
+      {
+        "kind": "pre/post update distribution probe on same legal observation",
+        "calls": 2,
+        "rows": 2
+      }
+    ],
+    "total_primary_planned_upper_bound": 207,
+    "total_rows_planned_upper_bound": 331,
+    "no_unlisted_extra_forward": true
+  },
+  "native_environment_plan": {
+    "training": "one native upper environment, exactly one initial reset and 32 sampling steps, no natural annual termination expected before32",
+    "C10": "separate native upper env with cache-hit-only audited replay, ordinary env.step loop stopped immediately on terminated; never use empty-auto-reset tail shortcut to evaluate a fresh year",
+    "C00": "separate same native upper env schema/cache-hit-only replay, B2 upper verb/fractions encoded to original hybrid transport; same B2 lower/constraints/cost",
+    "automatic_episode_resets": 0,
+    "cache_miss": "deny before any additional LiteStore construction"
+  },
+  "implementation_approval_note": "Requested package approval covers minimal new R05 entry and fake checks plus one pilot only after fixed-source independent and algorithm reviews; current c02 is a reviewed launch proposal, NOT an implemented/runnable entry or training approval"
+}

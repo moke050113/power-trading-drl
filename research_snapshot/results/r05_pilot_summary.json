@@ -1,0 +1,149 @@
+{
+  "status": "SCOPED_PILOT_COMPLETE",
+  "task_R05_complete": false,
+  "independent_world_N": 1,
+  "training_seeds": 1,
+  "same_training_evaluation_world": true,
+  "costs": {
+    "training_trajectory": 454863969.2758029,
+    "C10": 459182371.6445424,
+    "C00": 445865181.15775704
+  },
+  "C10_minus_C00": 13317190.486785352,
+  "statistics": "descriptive exposed N1; no CI, significance, CVaR or independent advantage",
+  "actual_config": {
+    "seed": 0,
+    "gamma": 1.0,
+    "gae_lambda": 0.95,
+    "n_steps": 32,
+    "batch_size": 32,
+    "n_epochs": 2,
+    "normalize_advantage": true,
+    "ent_coef": 0.0,
+    "vf_coef": 0.5,
+    "max_grad_norm": 0.5,
+    "use_sde": false,
+    "target_kl": null,
+    "n_envs": 1,
+    "device": "cpu",
+    "learning_rate": 0.0003,
+    "clip_range": 0.2,
+    "clip_range_vf": null,
+    "net_arch": {
+      "pi": [
+        32,
+        32
+      ],
+      "vf": [
+        32,
+        32
+      ]
+    },
+    "activation_fn": "torch.nn.modules.activation.Tanh",
+    "ortho_init": true,
+    "normalize_images": true,
+    "share_features_extractor": true,
+    "optimizer_class": "torch.optim.adam.Adam",
+    "optimizer_eps": [
+      1e-05
+    ],
+    "spaces_sha256": "44a8dd807102c9539393b96a1a3c37582d7f8f455c539bcb0dc722526c05c8b8"
+  },
+  "checkpoint_sha256": "2dd7852c615069234a040d2504fb2331934a5c942506ea46ba0b0e908c8f4e1f",
+  "config_sha256": "3238304aa13ade077fd30ff6463d2d507ae8ee0c7b60ec8d5701b3bb7650a97e",
+  "kind": "derived_publication_summary_of_existing_run_NOT_NEW_EXECUTION",
+  "C10_minus_C00_percent": 2.9868200185996208,
+  "cost_unit": "CNY",
+  "objective": "purchase_cost+flex_cost",
+  "world": {
+    "year": 2033,
+    "family": "w3_pilot_20261025",
+    "group": "G00",
+    "split": "train",
+    "fixture": false
+  },
+  "counts": {
+    "world_families": 1,
+    "condition_groups": 1,
+    "training_seeds": 1,
+    "envs": 3,
+    "PPO_controllers": 2,
+    "policy_objects": 2,
+    "native_resets": 3,
+    "new_native_worlds": 1,
+    "drivers": 3,
+    "coordinators": 3,
+    "published_worlds": 6,
+    "publication_and_DA_seal_events": 2484,
+    "rollout_collection_calls": 1,
+    "policy_value_API_calls": 189,
+    "policy_value_total_batch_rows": 313,
+    "native_env_step_calls": 181,
+    "upper_submission_attempts": 230,
+    "gradient_collection_steps": 32,
+    "rule_lower_calls": 26280,
+    "lower_submission_attempts": 26280,
+    "hour_prepare_attempts": 26280,
+    "device_prepare_hours": 26280,
+    "hour_settlement_attempts": 26280,
+    "delivered_hours": 26280,
+    "additional_diagnostic_API_calls": 8,
+    "additional_diagnostic_batch_rows": 70,
+    "PPO_train_calls": 1,
+    "backward_attempts": 2,
+    "backward_completed": 2,
+    "optimizer_step_attempts": 2,
+    "optimizer_steps_completed": 2,
+    "model_predict_wrapper_calls": 148,
+    "native_annual_deliveries": 3,
+    "new_checkpoint_saves": 1,
+    "new_checkpoint_loads": 1,
+    "audited_world_replay_copies": 2,
+    "rule_upper_calls": 52
+  },
+  "preflight": {
+    "tests": 6,
+    "fake_calls": 50,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "resource": {
+    "pilot_worker_seconds": 155.14099999994505,
+    "pilot_supervisor_seconds": 156.15599999995902,
+    "observed_peak_RSS_bytes": 478457856,
+    "runtime_evidence_bytes": 36549436,
+    "cache_bytes": 0
+  },
+  "source_identities": {
+    "input_W2_c26": "8fcff54bf23886678f1ad3ef7098c5ec9260d32dd0662e5006183ad07d21dfe3",
+    "executed_W3_c04": "0495f3623b777a7625ea4654158b9e9f7a9ebe66bd269b045d5024df10922afe",
+    "archived_W3_c05": "3061d9875219adcb5f04bda64b9be23538163fc760898ead6d3be7b415e60643"
+  },
+  "original_receipt_sha256": {
+    "pilot": "06255d09cc77f5efaea9793168e566340a8e6415d5f036164e554e82c4029b74",
+    "preflight": "77d53be06078cc34f4844d18e72b56641322d75c26b2f0ac6ce1042192abb350"
+  },
+  "review_record_sha256": {
+    "c04_code_independent.json": "ef1eb64dec7d6e9dcf0f8a84eb4ca63b16b8ee45f7b12fb6e0c12e532e4b767b",
+    "c04_code_algorithm.json": "234196d57f0340074bc35e6f475b7bbe7d293ec0cc86a6b86bf6fa74ce064615",
+    "c04_runtime_independent.json": "da73f86c35495fdc9a64be9f8be137cbd95653ac55f236d77f18d51714202e9b",
+    "c04_runtime_algorithm.json": "862971e5e3690acd6ed5b551f55e594b8f52e6a52d7ec4ce89dd0e00d9f8a841",
+    "c05_metadata_independent.json": "d598bed5f312b29f75a2fa242f4eb8a6f28b3c13cde0e289ce818f3115444f0b",
+    "c05_metadata_algorithm.json": "5e6575b0f79f6b32d8fa1f763860388a553c055e3dfc89bcb2893f77419af791"
+  },
+  "raw_evidence_uploaded": false,
+  "checkpoint_uploaded": false,
+  "same_task_checkpoint_io_during_pilot": {
+    "save": 1,
+    "load": 1
+  },
+  "checkpoint_additional_reads_at_publication": 0,
+  "limitations": [
+    "last terminal bootstrap standalone evidence NOT_VERIFIED; first31 GAE recurrences/return relation only independently audited",
+    "32macro two epochs are not64 independent samples or whole-year learning",
+    "three annual trajectories are one exposed world, not3 independent samples",
+    "no multi-seed uncertainty/significance/CVaR/coordination or independent advantage claim",
+    "public full old regression and three demos not executed; integration obligation retained"
+  ]
+}
